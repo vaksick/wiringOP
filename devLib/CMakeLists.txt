@@ -5,7 +5,7 @@ project(devLib)
 include_directories(.)
 
 file(GLOB SRC "*.c")
-add_library(devLib ${SRC})
+add_library(devLib STATIC ${SRC})
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2 -Wall -Wextra -Winline -pipe")
 
